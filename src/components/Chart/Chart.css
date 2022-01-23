@@ -1,0 +1,56 @@
+.chart-container {
+  height: 12rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5%;
+  background-color: #393e46;
+  border-radius: 12px;
+}
+
+.bar-container {
+  height: 100%;
+  width: 4.6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: xx-small;
+}
+.bar {
+  height: 100%;
+  width: 100%;
+  border: 1.6px solid #d4ecdd;
+  display: flex;
+  align-items: flex-end;
+  border-top-right-radius: 112px;
+  border-top-left-radius: 112px;
+  border-bottom-right-radius: 112px;
+  border-bottom-left-radius: 112px;
+}
+.bar-fill {
+  width: 100%;
+  border-top-right-radius: 112px;
+  border-top-left-radius: 112px;
+  border-bottom-right-radius: 112px;
+  border-bottom-left-radius: 112px;
+  background-color: #d4ecdd;
+  transition: 0.5s ease-out;
+}
+
+@media (min-width: 580px) {
+  .chart-container {
+    width: 50%;
+  }
+
+  .chart-container {
+    padding: 1.5%;
+  }
+
+  .bar-container {
+    width: 2.4%;
+  }
+
+  .bar-container {
+    font-size: x-small;
+  }
+}

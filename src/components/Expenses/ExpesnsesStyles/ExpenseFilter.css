@@ -1,0 +1,20 @@
+.filter-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #d4ecdd;
+  font-size: large;
+  margin: 0.5rem 0.5rem;
+}
+
+.filter-container select {
+  padding: 1.5%;
+  border-radius: 6px;
+}
+
+@media (min-width: 580px) {
+  .filter-container {
+    width: 50%;
+  }
+}

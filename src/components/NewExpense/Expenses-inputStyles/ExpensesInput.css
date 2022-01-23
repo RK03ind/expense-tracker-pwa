@@ -1,0 +1,37 @@
+.form-container {
+  margin-top: 1.8%;
+  margin-bottom: 1rem;
+  background-color: #393e46;
+  padding: 4%;
+  width: 80%;
+  border-radius: 12px;
+}
+
+.button-add-ui {
+  appearance: none;
+  width: 20%;
+  border: 1.2px solid #d4ecdd;
+  font-weight: bold;
+  font-size: medium;
+  color: #d4ecdd;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border-radius: 12px;
+  padding: 2.5%;
+  margin-top: 1rem;
+  background-color: #222831;
+}
+
+.button-add-ui:hover {
+  background-color: #d4ecdd;
+  color: #222831;
+}
+
+@media (min-width: 580px) {
+  .form-container {
+    margin-top: 1.8%;
+    width: 50%;
+    padding: 1%;
+  }
+}
