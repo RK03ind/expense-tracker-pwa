@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ReactPWAInstallProvider, { useReactPWAInstall } from "react-pwa-install";
+import { useReactPWAInstall } from "react-pwa-install";
 import Expenses from "./components/Expenses/Expenses";
 import ExpenseInput from "./components/NewExpense/ExpenseInput";
 
