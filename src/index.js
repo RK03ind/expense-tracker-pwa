@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactPWAInstallProvider, { useReactPWAInstall } from "react-pwa-install";
 import "./index.css";
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ReactPWAInstallProvider enableLogging>
+      <App />
+    </ReactPWAInstallProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

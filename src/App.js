@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ReactPWAInstallProvider, { useReactPWAInstall } from "react-pwa-install";
 import Expenses from "./components/Expenses/Expenses";
 import ExpenseInput from "./components/NewExpense/ExpenseInput";
 
@@ -29,7 +30,10 @@ function createCookie(name, value) {
 
 const App = () => {
   const [expenses, addExpenses] = useState(getCookie("mycookie"));
-
+  const { pwaInstall, supported, isInstalled } = useReactPWAInstall();
+  if (!isInstalled() && supported()) {
+    pwaInstall();
+  }
   const createItem = (data) => {
     addExpenses((prevState) => {
       var arr = [data, ...prevState];
