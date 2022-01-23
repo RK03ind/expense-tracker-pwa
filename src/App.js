@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useReactPWAInstall } from "react-pwa-install";
+
 import Expenses from "./components/Expenses/Expenses";
 import ExpenseInput from "./components/NewExpense/ExpenseInput";
 
@@ -29,14 +29,6 @@ function createCookie(name, value) {
 
 const App = () => {
   const [expenses, addExpenses] = useState(getCookie("mycookie"));
-  const { pwaInstall, supported, isInstalled } = useReactPWAInstall();
-  if (supported() && !isInstalled()) {
-    pwaInstall({
-      title: "Install Expense Tracker",
-      description:
-        "The app will work offline outside broswer and work offline ",
-    });
-  }
 
   const createItem = (data) => {
     addExpenses((prevState) => {
